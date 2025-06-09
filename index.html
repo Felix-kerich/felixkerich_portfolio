@@ -39,105 +39,145 @@
         <section class="home">
             <div class="home-content">
                 <h1>Kerich Felix </h1>
-                <h3> <span> software Engineer</span></h3>
-                <p>Passionate software engineer with expertise in full-stack development, specializing in creating efficient and user-centric solutions. Proficient in multiple programming languages and committed to innovative problem-solving.</p>
+                <h3> <span>Full Stack Developer</span></h3>
+                <p>Experienced full-stack developer specializing in Java Spring Boot, Python, and Go Lang Gin Gonic. Currently working at FranciumSources, building robust payment gateway solutions and responsive web applications. Passionate about creating efficient, scalable, and user-centric solutions.</p>
                 <div class="social-media">
                     <a href="https://github.com/Felix-kerich" style="--i:6"><i class='bx bxl-github'></i></a>
                     <a href="https://twitter.com/felix_kerich" style="--i:7"><i class='bx bxl-twitter'></i></a>
                     <a href="mailto: felixkipkiruikerich@gmail.com" style="--i:8"><i class='bx bxl-gmail'></i></a>
                     <a href="https://www.linkedin.com/in/felix-kerich-01370a27b/" style="--i:9"><i class='bx bxl-linkedin'></i></a>
                 </div>
-                <a href="cv.html" class="btn">Download Cv</a>
+                <a href="cv.html" class="btn">View CV</a>
 
             </div>
             <div class="home-img">
 
-                <img src="./images/me.png" alt="" width="400" height="450" style="border-radius: 50px;">
+                <img src="./images/fk.jpg" alt="" width="400" height="450" style="border-radius: 50px;">
 
             </div>
         </section>
         <section class="about">
-            <div class=" u-center-text u-margin-bottom-big " id="about">
+            <div class="u-center-text u-margin-bottom-big" id="about">
                 <h2 class="heading-secondary">
-                    ABOUT
+                    ABOUT ME
                 </h2>
             </div>
-            <!-- <h1 class="heading-primary u-center-text ">ABOUT</h1> -->
-            <div class="row" >
-                <div class="col-1-of-2">
-                    <div class="about-content">
-                        <div class="about-description ">
-                            <div class="home-img--about  u-margin-bottom-small  ">
-                                <img src="./images/me.jpeg" alt="" width="300" height="350">
-                            </div>
-                        </div>
-                        <div class="about-me" >
-                            <p class="paragraph">
-                                I am a seasoned software engineer with expertise in both front-end and back-end development, specializing in languages like HTML, CSS, JavaScript, PHP, Java, and C++. Proficient in Spring Boot and React, I craft user-centric, innovative solutions and integrate AI to enhance software capabilities. My skills in database management and network configuration ensure optimal performance and security. Committed to continuous learning, I create cutting-edge software that drives efficiency and engagement.
-                                </p>
-                        </div>
+            <div class="row" style="display: flex; width: 100%; gap: 30px; flex-wrap: wrap;">
+                <!-- Left Section - Clickable Components -->
+                <div class="about-nav" style="flex: 0 0 300px; background: #f8f9fa; padding: 20px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <div class="nav-item active" data-section="overview" style="padding: 15px; margin-bottom: 10px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; background: #3498db; color: white;">
+                        <h3 style="margin: 0; font-size: 1.1em;">Overview</h3>
+                    </div>
+                    <div class="nav-item" data-section="backend" style="padding: 15px; margin-bottom: 10px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; background: #f8f9fa; border: 1px solid #e9ecef;">
+                        <h3 style="margin: 0; font-size: 1.1em; color: #2c3e50;">Backend & APIs</h3>
+                    </div>
+                    <div class="nav-item" data-section="frontend" style="padding: 15px; margin-bottom: 10px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; background: #f8f9fa; border: 1px solid #e9ecef;">
+                        <h3 style="margin: 0; font-size: 1.1em; color: #2c3e50;">Frontend & Mobile</h3>
+                    </div>
+                    <div class="nav-item" data-section="payments" style="padding: 15px; margin-bottom: 10px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; background: #f8f9fa; border: 1px solid #e9ecef;">
+                        <h3 style="margin: 0; font-size: 1.1em; color: #2c3e50;">Payment Solutions</h3>
+                    </div>
+                    <div class="nav-item" data-section="devops" style="padding: 15px; margin-bottom: 10px; border-radius: 8px; cursor: pointer; transition: all 0.3s ease; background: #f8f9fa; border: 1px solid #e9ecef;">
+                        <h3 style="margin: 0; font-size: 1.1em; color: #2c3e50;">DevOps & Cloud</h3>
                     </div>
                 </div>
-                <div id="scroll-about">
-                <div class="col-1-of-2">
-                    
-                    <div class="about-skills">
-                        <div class="wrapper">
-                            <div class="skill">
-                                <p>java</p>
-                                <div class="skill-bar skill1">
-                                    <span class="skill-count1">90%</span>
-                                </div>
+
+                <!-- Right Section - Content Display -->
+                <div class="about-content" style="flex: 1; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); min-width: 300px;">
+                    <div class="content-section active" id="overview" style="display: block;">
+                        <div style="display: flex; gap: 30px; align-items: start; flex-wrap: wrap;">
+                            <div class="profile-image" style="flex: 0 0 250px; max-width: 100%;">
+                                <img src="./images/me.jpeg" alt="Kerich Felix" style="width: 100%; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
                             </div>
-                            <div class="skill">
-                                <p>springboot</p>
-                                <div class="skill-bar skill2">
-                                    <span class="skill-count2">80%</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <p>javascript</p>
-                                <div class="skill-bar skill2">
-                                    <span class="skill-count2">80%</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <p>react</p>
-                                <div class="skill-bar skill3">
-                                    <span class="skill-count3">75%</span>
-                                </div>
-                                </div>
-                                <div class="skill">
-                                    <p>Flutter</p>
-                                    <div class="skill-bar skill3">
-                                        <span class="skill-count3">75%</span>
+                            <div class="overview-text" style="flex: 1; min-width: 300px;">
+                                <h3 style="color: #2c3e50; margin-bottom: 20px;">Full Stack Developer</h3>
+                                <p style="font-size: 1.1em; line-height: 1.6; color: #2c3e50; margin-bottom: 20px;">
+                                    I am a versatile full-stack developer at FranciumSources, specializing in payment gateway solutions and modern web applications. My expertise combines backend development with Java Spring Boot and Go Lang Gin Gonic, frontend development with Next.js, and mobile development using Jetpack Compose.
+                                </p>
+                                <div class="quick-stats" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 30px;">
+                                    <div class="stat-item" style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                        <h4 style="margin: 0 0 5px 0; color: #3498db;">Experience</h4>
+                                        <p style="margin: 0; font-size: 1.2em; font-weight: bold; color: #2c3e50;">5+ Years</p>
                                     </div>
-                            </div>
-                             <div class="skill">
-                                <p>Flask</p>
-                                <div class="skill-bar skill4">
-                                    <span class="skill-count4">80%</span>
+                                    <div class="stat-item" style="background: #f8f9fa; padding: 15px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                        <h4 style="margin: 0 0 5px 0; color: #3498db;">Projects</h4>
+                                        <p style="margin: 0; font-size: 1.2em; font-weight: bold; color: #2c3e50;">20+</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="skill">
-                                <p>Django</p>
-                                <div class="skill-bar skill3">
-                                    <span class="skill-count3">75%</span>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <p>Networking</p>
-                                <div class="skill-bar skill3">
-                                    <span class="skill-count3">75%</span>
-                                </div>
-                             </div>
-                            <div class="skill">
-                                    <p>AI</p>
-                                    <div class="skill-bar skill3">
-                                        <span class="skill-count3">75%</span>
-                                 </div>                                 
                         </div>
                     </div>
+
+                    <div class="content-section" id="backend" style="display: none;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">Backend & APIs Expertise</h3>
+                        <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Java Spring Boot</h4>
+                                <p style="margin: 0; color: #2c3e50;">Enterprise-grade applications, RESTful APIs, Microservices architecture</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Go Lang Gin Gonic</h4>
+                                <p style="margin: 0; color: #2c3e50;">High-performance services, API development, Concurrent programming</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Python & Node.js</h4>
+                                <p style="margin: 0; color: #2c3e50;">Rapid development, Scripting, Server-side JavaScript, Express.js</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">API Development</h4>
+                                <p style="margin: 0; color: #2c3e50;">RESTful APIs, GraphQL, API Documentation, Postman</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="frontend" style="display: none;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">Frontend & Mobile Development</h3>
+                        <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Next.js & React</h4>
+                                <p style="margin: 0; color: #2c3e50;">Modern web applications, Server-side rendering, React ecosystem, Component architecture</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Android Development</h4>
+                                <p style="margin: 0; color: #2c3e50;">Jetpack Compose, Kotlin, Material Design, Clean Architecture</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">UI/UX Development</h4>
+                                <p style="margin: 0; color: #2c3e50;">Responsive design, Material UI, Tailwind CSS, Modern UI frameworks</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">State Management</h4>
+                                <p style="margin: 0; color: #2c3e50;">Redux, Context API, State management patterns, Data flow</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="payments" style="display: none;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">Payment Solutions</h3>
+                        <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Payment Gateway Integration</h4>
+                                <p style="margin: 0; color: #2c3e50;">Multiple payment providers, Secure transactions, Real-time processing</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Transaction Management</h4>
+                                <p style="margin: 0; color: #2c3e50;">Payment processing, Security protocols, Transaction monitoring</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-section" id="devops" style="display: none;">
+                        <h3 style="color: #2c3e50; margin-bottom: 20px;">DevOps & Cloud Infrastructure</h3>
+                        <div class="expertise-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">Cloud Services</h4>
+                                <p style="margin: 0; color: #2c3e50;">AWS, Containerization, Infrastructure as Code</p>
+                            </div>
+                            <div class="expertise-item" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #3498db;">
+                                <h4 style="color: #3498db; margin: 0 0 10px 0;">DevOps Practices</h4>
+                                <p style="margin: 0; color: #2c3e50;">CI/CD, Docker, Automated deployments</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -232,29 +272,21 @@
                                 </div>
                                 <h4 class="card__heading">
                                     <span class="card__heading--span--3">
-                                        odin-resraurant
+                                        FranciumSources Payments
                                     </span>
-
                                 </h4>
                                 <div class="card__details">
-                                    <p class="card__details-paragraph">Indulge in a culinary journey like no other at our exquisite restaurant,
-                                         where artistry meets flavor. Nestled in the heart of the city, 
-                                         our charming and elegant space welcomes you with warm ambiance and impeccable service.
-                                          Savor every bite as our master chefs craft a symphony of locally sourced ingredients and international inspirations, 
-                                          creating dishes that dance on your palate. Whether you're seeking an intimate dinner for two or a gathering of friends and family, 
-                                          our thoughtfully curated menu, 
-                                          paired with an extensive selection of fine wines and handcrafted cocktails, 
-                                          promises an unforgettable dining experience that tantalizes the senses and leaves you craving for more.</p>
+                                    <p class="card__details-paragraph">A robust payment gateway solution built with Go Lang Gin Gonic and Next.js. Features secure payment processing, real-time transaction monitoring, and seamless integration with multiple payment providers. The platform ensures reliable and efficient payment processing for businesses of all sizes.</p>
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-3">
                                 <div class="card__cta">
                                     <div class="card__price-box">
-                                        <p class="card__price-only">HTML CSS</p>
-                                        <p class="card__price-value"></p>
-
+                                        <p class="card__price-only">Go Lang Gin Gonic</p>
+                                        <p>&</p>
+                                        <p class="card__price-only">Next.js</p>
                                     </div>
-                                    <a href="https://felix-kerich.github.io/odin-recipes/" class="btn  btn--white">Visit now!</a>
+                                    <a href="https://payments.franciumsources.com/" class="btn  btn--white">Visit now!</a>
                                 </div>
                             </div>
                         </div>
@@ -435,8 +467,42 @@
             <li><a href="#" style="--i:4">Portfolio</a></li>
             <li><a href="#" style="--i:5">Contacts</a></li>
         </ul>
-        <p class="copyright">kerichfelix  @ 2024</p>
+        <p class="copyright">kerichfelix  @ <script>document.write(new Date().getFullYear())</script></p>
       </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const navItems = document.querySelectorAll('.nav-item');
+            const contentSections = document.querySelectorAll('.content-section');
+
+            navItems.forEach(item => {
+                item.addEventListener('click', function() {
+                    // Remove active class from all nav items
+                    navItems.forEach(nav => {
+                        nav.style.background = '#f8f9fa';
+                        nav.style.color = '#2c3e50';
+                        nav.style.border = '1px solid #e9ecef';
+                        nav.querySelector('h3').style.color = '#2c3e50';
+                    });
+
+                    // Add active class to clicked nav item
+                    this.style.background = '#3498db';
+                    this.style.color = 'white';
+                    this.style.border = 'none';
+                    this.querySelector('h3').style.color = 'white';
+
+                    // Hide all content sections
+                    contentSections.forEach(section => {
+                        section.style.display = 'none';
+                    });
+
+                    // Show the corresponding content section
+                    const sectionId = this.getAttribute('data-section');
+                    document.getElementById(sectionId).style.display = 'block';
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
