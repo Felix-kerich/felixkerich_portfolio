@@ -424,6 +424,41 @@
                emailjs.init("xZ33d1QvSmtHidd3G");
            })();
 
+           // Function to send view notification
+           function sendViewNotification() {
+               const visitorInfo = {
+                   from_name: "Portfolio Visitor",
+                   from_email: "portfolio@visitor.com",
+                   message: "Someone viewed your portfolio",
+                   time: new Date().toLocaleString(),
+                   visitor_info: {
+                       userAgent: navigator.userAgent,
+                       language: navigator.language,
+                       platform: navigator.platform,
+                       screenSize: `${window.screen.width}x${window.screen.height}`,
+                       referrer: document.referrer || 'Direct visit'
+                   }
+               };
+
+               // Send notification email
+               emailjs.send("service_w1zmfwm", "template_vikhm7q", visitorInfo)
+                   .then(function(response) {
+                       console.log("View notification sent successfully");
+                   })
+                   .catch(function(error) {
+                       console.log("Failed to send view notification", error);
+                   });
+           }
+
+           // Send notification when page loads
+           window.addEventListener('load', function() {
+               // Check if this is the first visit in this session
+               if (!sessionStorage.getItem('portfolioViewed')) {
+                   sendViewNotification();
+                   sessionStorage.setItem('portfolioViewed', 'true');
+               }
+           });
+
            // Get the form element
            const form = document.getElementById('contact-form');
 
