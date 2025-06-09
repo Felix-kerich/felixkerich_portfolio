@@ -408,48 +408,62 @@
                     CONTACT ME
                 </h2>
             </div>
-            <form>
-                <input name="name" type="text" class="feedback-input" placeholder="Name" />
-                <input name="email" type="text" class="feedback-input" placeholder="Email" />
-                <textarea name="text" class="feedback-input" placeholder="Your Message"></textarea>
+            <form id="contact-form">
+                <input name="name" type="text" class="feedback-input" placeholder="Name" required />
+                <input name="email" type="email" class="feedback-input" placeholder="Email" required />
+                <textarea name="message" class="feedback-input" placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
 
         </section>
        <!-- Add the EmailJS SDK to your webpage -->
-       <script type="text/javascript"
-       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-              <script>
-           var scrollDiv = document.getElementById("scroll-about");
+       <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+       <script>
+           // Initialize EmailJS with your public key
+           (function() {
+               emailjs.init("xZ33d1QvSmtHidd3G");
+           })();
 
-           scrollDiv.addEventListener("scroll", function () {
-               if (scrollDiv.scrollTop > 100) {
-                   scrollDiv.classList.add("animate");
-               }
-               else {
-                   scrollDiv.classList.remove("animate");
-               }
-           });
-           // Initialize the EmailJS SDK with your user ID and email service ID
-           emailjs.init('xZ33d1QvSmtHidd3G');
+           // Get the form element
+           const form = document.getElementById('contact-form');
 
-           // Add an event listener to the form's submit event
-           document.querySelector("form").addEventListener("submit", function (event) {
-               event.preventDefault(); // Prevent the default form submit behavior
+           // Add submit event listener
+           form.addEventListener('submit', function(event) {
+               event.preventDefault();
 
-               // Send the email using EmailJS
-               emailjs.send("service_w1zmfwm", "template_oob2ais", {
-                   "from_name": document.querySelector("input[name='name']").value,
-                   "from_email": document.querySelector("input[name='email']").value,
-                   "message": document.querySelector("textarea[name='text']").value
+               // Get form data
+               const name = form.querySelector('input[name="name"]').value;
+               const email = form.querySelector('input[name="email"]').value;
+               const message = form.querySelector('textarea[name="message"]').value;
+
+               // Show loading state
+               const submitButton = form.querySelector('button[type="submit"]');
+               const originalButtonText = submitButton.textContent;
+               submitButton.textContent = 'Sending...';
+               submitButton.disabled = true;
+
+               // Send email using EmailJS
+               emailjs.send("service_w1zmfwm", "template_vikhm7q", {
+                   from_name: name,
+                   from_email: email,
+                   message: message,
+                   to_name: "Kerich Felix",
+                   time: new Date().toLocaleString()
                })
-                   .then(function (response) {
-                       console.log("SUCCESS", response);
-                       alert("Your message has been sent successfully!");
-                   }, function (error) {
-                       console.log("FAILED", error);
-                       alert("Sorry, there was an error sending your message.");
-                   });
+               .then(function(response) {
+                   console.log("SUCCESS", response);
+                   alert("Your message has been sent successfully!");
+                   form.reset();
+               })
+               .catch(function(error) {
+                   console.log("FAILED", error);
+                   alert("Sorry, there was an error sending your message. Please try again.");
+               })
+               .finally(function() {
+                   // Reset button state
+                   submitButton.textContent = originalButtonText;
+                   submitButton.disabled = false;
+               });
            });
        </script>
 
